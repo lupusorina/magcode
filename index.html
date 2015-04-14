@@ -106,14 +106,14 @@ figcaption {
             <p><b>Force between cuboidal magnets</b></p>
             <p><i>Parallel magnetized magnets</i></p>
         	<p>The calculation of the forces between two cubical magnets is done according to the method of Akoun and Yonnet. They characterize the force with the following equation:</p>
-            <div align="center"><img src="/images/CodeCogsEqn (1).gif"  width="506" height="56" /></div>
+            <div align="center"><img src="images/CodeCogsEqn (1).gif"  width="506" height="56" /></div>
             <p>Where J and J’ indicate the magnetizations of the first and second magnet respectively. The function (&phi;) differs per direction in the Cartesian coordinate system and is dependend on the geometrical parameters.</p>
             <p><i>Perpendicular magnetized magnets</i></p>
             <p>The calcalation of the forces between magnets that are magnetized in perpendical directions is based on the theory elaborated by H. Allag et. al. [2] and J.L.G. Janssen et. al. [3].</p>
             <p><b>Force between cylindrical magnets</b></p>
             <p><i>Coaxial magnets</i></p>
         	<p>The forces between coaxial cylindrical magnets  are calculated by using the simplified force equation as described by Will Robertson [4]. The expression for this equation is:</p>
-            <div align="center"><img src="/images/CodeCogsEqn (2).gif" width="262" height="56" /></div>
+            <div align="center"><img src="images/CodeCogsEqn (2).gif" width="262" height="56" /></div>
             <p><i>Cylindrical magnets with an offset</i></p>
             <p>In order to calculate the forces for cylindrical magnets that have an offset in the direction perpendicular to their magnetized direction, the theory of John. T. Conway [5] is used. This method uses Bessel functions in order to calculate these forces.</p>
         	<p><b>Sources</b></p>
@@ -133,7 +133,7 @@ figcaption {
             </pre>
         	<p><b><a name="Example1">Example</a></b></p>
             <p>Let us consider a system with two repelling magnets; one fixed and one floating magnet.</p>
-            <div align="center"><img src="/images/MagnetForces.png" width="156" height="239" />
+            <div align="center"><img src="images/MagnetForces.png" width="156" height="239" />
             <figcaption>Fig1. - Simple system of two repelling magnets.</figcaption></div>
             <p>The force acting on the floating magnet can now be calculated by using the magnetforces MATLAB function. The function can be applied as follows:</p>
         	<pre>
@@ -162,7 +162,7 @@ figcaption {
             xlabel('N (mm)'); ylabel('F (N)');
 			</pre>
             <p>Which produces the following figure:</p>
-            <div align="center"><img src="/images/MagnetExample.png" width="413" height="311" />
+            <div align="center"><img src="images/MagnetExample.png" width="413" height="311" />
             <figcaption>Fig2. - Force acting on the floating magnet for different values for N.</figcaption></div>
             <p class="BodySubHeader"><a name="Singleagnetforce">Singlemagnetforce.m</a></p>
         <p>This function calculates the force between cuboidal magnets using the theorem described in the paper of Will Robertson. </p>
@@ -203,8 +203,8 @@ figcaption {
             % Calculate forces
             F = multimagnetforces(magnet_float, displ, magnets_fixed, pos);
             </pre>
-        	<img src="/images/Levitation.png" width="295" height="222" />
-        	<img src="/images/Levitation2.png" width="295" height="222" />
+        	<img src="images/Levitation.png" width="295" height="222" />
+        	<img src="images/Levitation2.png" width="295" height="222" />
             <figcaption>Fig3. - Left: cylindrical levitation system. Right: levitation system with cuboidal magnets.</figcaption>
         	<p class="BodySubHeader"><a name="Drawmagnet">Drawmagnet.m</a></p>
             <p>Function drawmagnets plots a 3D visualization of the magnets used in multimagnetforces. The floating magnet is shown in a green color, the fixed magnets are shown in a red color.</p>
