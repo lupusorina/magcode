@@ -93,13 +93,13 @@ figcaption {
                 <ul>
                     <li><a href="#Usage1">Usage</a></li>
                     <li><a href="#Example1">Example</a></li>
-                    <li>Singlemagnetforce.m</li>
+                    <li><a href="#Singlemagnetforce">Singlemagnetforce.m</a></li>
                 </ul>
-                <li><a href="#Multiagnetforces">Multimagnetforces.m</a></li>
+                <li><a href="#Multimagnetforces">Multimagnetforces.m</a></li>
                 <ul>
-                    <li>Usage</li>
-                    <li>Example</li>
-                	<li>Drawmagnet.m</li>
+                    <li><a href="#Usage2">Usage</a></li>
+                    <li><a href="#Example2">Example</a></li>
+               		<li><a href="#Drawmagnet">Drawmagnet.m</a></li>
                 </ul>
             </ul>
             </i></p>
@@ -171,17 +171,17 @@ figcaption {
             <p>Which produces the following figure:</p>
             <div align="center"><img src="images/MagnetExample.png" width="413" height="311" />
             <figcaption>Fig2. - Force acting on the floating magnet for different values for N.</figcaption></div>
-            <p class="BodySubHeader"><a name="Singleagnetforce">Singlemagnetforce.m</a></p>
+            <p class="BodySubHeader"><a name="Singlemagnetforce">Singlemagnetforce.m</a></p>
         <p>This function calculates the force between cuboidal magnets using the theorem described in the paper of Will Robertson. </p>
-            <p class="BodyHeader"><a name="Multiagnetforces">Multimagnetforces.m</a></p>
+            <p class="BodyHeader"><a name="Multimagnetforces">Multimagnetforces.m</a></p>
             <p>The function multimagnetforces is used to calculate the total forces acting on a floating magnet while using an arbitrary number of fixed magnets.</p>
-            <p><b>Usage</b></p>
+            <p><b><a name="Usage2>Usage</a></b></p>
             <p>The function multimagnetforces can be used as follows:</p>
             <pre>
             F = magnetforces(magnet_float, displ, magnet_fixed, pos);
             </pre>
             <p>Similar inputs as in the magnetforces function are used. However, now magnet_fixed is an array of structures and there is an additional variable called 'pos' which is a matrix of size nx3 indicating the positions of all the fixed magnets with respect to the floating magnet.</p>
-        	<p><b>Example</b></p>
+        	<p><b><a name="Example2">Example</a></b></p>
             <p>As an example, a simple cylindrical levitation system is considered. A visualisation of the system can be found in figure 3. The function multimagnetforces can be used in MATLAB as follows:</p>
             <pre>
             % Set geometrical parameters
