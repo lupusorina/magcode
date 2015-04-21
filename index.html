@@ -127,6 +127,7 @@ figcaption {
             <p>[4] Robertson, W., Cazzolato, B. and Zander, A. (2011). A Simplified Force Equation for 						Coaxial Cylindrical Magnets and Thin Coils. IEEE Transactions on Magnetics, 47(8), pp.2045-2049.</p>
             <p>[5] Conway, J. (2013). Forces Between Thin Coils With Parallel Axes Using Bessel Functions. IEEE Transactions on Magnetics, 49(9), pp.5028-5034.</p>
             <p><b><a name="Usage1">Usage</a></b></p>
+            The syntax of the function is as follows:
             <pre>
             F = magnetforces(magnet_fixed, magnet_float, displ);
             F = magnetforces(magnet_fixed, magnet_float, displ, 'force');
@@ -135,6 +136,7 @@ figcaption {
             [F K T] = magnetforces(magnet_fixed, magnet_float, displ,...
             			'force', 'stiffness', 'torque');
             </pre>
+            The input parameters 'magnet_fixed' and 'magnet_float' are structures that defines the grade, dimension and magnetized direction of the fixed magnet and floating magnet respectively. The parameter 'displ' is a (3xD) matrix, in which D indicates the number of displacements over which the forces are calculated.
         	<p><b><a name="Example1">Example</a></b></p>
             <p>Let us consider a system with two repelling magnets; one fixed and one floating magnet.</p>
             <div align="center"><img src="images/MagnetForces.png" width="156" height="239" />
